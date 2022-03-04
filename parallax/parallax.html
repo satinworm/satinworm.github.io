@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style-parallax.css" />
+    <title>kurwa moon</title>
+  </head>
+  <body>
+    <section>
+      <img src="bg.jpg" id="bg" />
+      <img src="moon.png" id="moon" />
+      <img src="mountain.png" id="mountain" />
+      <img src="road.png" id="road" />
+      <h2 id="text">Kurwa Moon</h2>
+    </section>
+    <div class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non, sint veniam at
+      fugiat natus! Fugiat facilis consectetur placeat ratione exercitationem. Autem modi
+      odio fugiat a soluta voluptates necessitatibus nobis. Expedita soluta a sed,
+      repellendus ea, similique, perferendis illum ipsa eveniet repudiandae illo
+      laboriosam temporibus facere magnam sunt praesentium adipisci maiores itaque
+      repellat sapiente! Vero eius accusamus repellat repudiandae commodi! Saepe
+      praesentium consequatur nesciunt ut ea! Asperiores iste minus non illum reiciendis
+      atque pariatur, at nisi hic repudiandae quas ea magni voluptatem sequi explicabo sed
+      culpa dolore nemo, voluptatibus obcaecati. Possimus autem laudantium praesentium
+      accusantium quod assumenda labore quibusdam, eos soluta cum, quo minima aperiam iste
+      unde quaerat saepe non modi quia amet iure earum sint voluptates facilis eius! Ex?
+      Esse nisi ullam unde dignissimos voluptatum, consectetur similique cum ad est.
+      Placeat dolorum quibusdam consectetur accusantium est voluptatem commodi. Quis
+      laborum rem repellat ab iusto mollitia ullam obcaecati rerum? Adipisci.
+    </div>
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", function () {
+        var value = window.scrollY; /* холдит bg на месте */
+
+        bg.style.top = value * 0.5 + "px";
+        moon.style.left = -value * 0.5 + "px";
+        mountain.style.top = -value * 0.15 + "px";
+        road.style.top = value * 0.15 + "px";
+        text.style.top = value * 1 + "px";
+      });
+    </script>
+  </body>
+</html>
